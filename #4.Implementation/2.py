@@ -1,5 +1,5 @@
 """
-문제)
+문제) 시각
 정수 N이 입력되면 00시 00분 00초부터 N시 59분 59초까지의 모든 시각 중에서 3이 하나라도
 포함되는 모든 경우의 수를 구하는 프로그램을 작성하시오.
 예를 들어 1을 입력했을 때 다음은 3이 하나라도 포함되어 있으므로 세어야 하는 시각이다.
@@ -24,9 +24,9 @@ xx시 xx분 xx초를 6자리 문자열로 생각하자.
 n = int(input())
 ans = 0
 
-for i in range(n+1):
-    for j in range(60):
-        for k in range(60):
+for i in range(n + 1):  # 시
+    for j in range(60):  # 분
+        for k in range(60):  # 초
             if '3' in str(i) + str(j) + str(k):
                 ans += 1
 
