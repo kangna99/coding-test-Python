@@ -98,6 +98,7 @@ while True:
         if game_map[na][nb] != 1:
             a = na
             b = nb
+            turn_cnt = 0
         # 더 이상 움직일 수 없음
         else:
             break
